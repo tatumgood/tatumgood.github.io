@@ -28,18 +28,20 @@
       <li>How can SIGCSE ensure that its policies, practices, and culture align with its stated goals of fostering diversity, equity, and inclusion in CS education?</li>
       <li>How can SIGCSE foster a culture of constructive criticism and continuous improvement while also addressing systemic inequalities in academia?</li>
     </ol>
-  </div>
-</body>
-    <h2>Canvas Drawing</h2>
-    <canvas id="myCanvas" width="200" height="200"></canvas>
+      <h2>Canvas Drawing</h2>
+    <canvas id="myCanvas" width="200" height="200" style="border: 1px solid #000;"></canvas>
   </div>
 
   <script>
-    // Drawing a simple rectangle on the canvas
+    // JavaScript code for drawing on the canvas
     const canvas = document.getElementById('myCanvas');
     const ctx = canvas.getContext('2d');
-    ctx.fillStyle = '#FF0000';
-    ctx.fillRect(50, 50, 100, 100);
+
+    // Draw a rectangle
+    ctx.fillStyle = '#FF0000'; // Red color
+    ctx.fillRect(50, 50, 100, 100); // (x, y, width, height)
   </script>
+</body>
+
 </html>
 
