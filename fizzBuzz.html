@@ -2,9 +2,21 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fizz Buzz Exercise</title>
+  <script>
+    function fizzBuzz() {
+            for (let i = 1; i <= 100; i++) { // Loop through numbers 1 to 100
+                if (i % 15 === 0) { // Check for divisibility by 3 and 5 (FizzBuzz)
+                    console.log("FizzBuzz");
+                } else if (i % 3 === 0) {
+                    console.log("Fizz");
+                } else if (i % 5 === 0) {
+                    console.log("Buzz");
+                } else {
+                    console.log(i.toString()); // Convert number to string for logging
+                }
+            }
+        }
+  </script>
 </head>
 
 
