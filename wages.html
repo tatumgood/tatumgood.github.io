@@ -4,9 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discussion on Ethical Data Practices</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Adding Chart.js -->
 </head>
 <body>
     <h1>Ethical Considerations in Data Collection and Use</h1>
+
+    <h2>Wage Theft vs. Property Crime Visual Comparison</h2>
+    <canvas id="crimeChart"></canvas> <!-- Canvas element for the chart -->
+
+    <script>
+        var ctx = document.getElementById('crimeChart').getContext('2d');
+        var crimeChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Wage Theft', 'Property Crimes'],
+                datasets: [{
+                    label: 'Estimated Annual Loss in Billions USD',
+                    data: [15, 12.7],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
 
     <h2>1. Was the gathering of this data ethical?</h2>
     <p>The ethicality of data gathering depends on the methods of collection, consent from participants, and the protection of their privacy. For wage theft data, ethical collection involves transparent methods and ensuring the confidentiality and rights of the workers are respected.</p>
@@ -38,5 +72,6 @@
 
 </body>
 </html>
+
 
 
